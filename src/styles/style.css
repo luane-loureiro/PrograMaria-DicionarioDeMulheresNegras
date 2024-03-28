@@ -1,11 +1,24 @@
+:root{
+    --cor__clara:#FFF5E4;
+    --cor__media_1: #FFC4C4 ;
+    --cor__media_2: #EE6983;
+    --cor__escura: #850E35; 
+}
+
 body {
     font-family: Open Sans, sans-serif;
+    background-color: var(--cor__media_2);
+    color:var(--cor__clara);
 }
 
 header {
     height: 100px;
-    border-bottom: 1px solid #000;
+    border-bottom: 2px dashed var(--cor__media_1);
     margin-bottom: 40px;
+    color: var(--cor__escura) ;
+}
+header p{
+    color: var(--cor__media_1);
 }
 
 @media (max-width: 768px) {
@@ -36,9 +49,11 @@ section {
 .card {
     display: inline-block;
     margin: 10px;
-    border: 1px solid #000;
+    border: 3px solid var(--cor__media_1);
     vertical-align: top;
     max-height: 100%;
+    color:var(--cor__escura);
+    background-color: var(--cor__clara);
 }
 
 @media (max-width: 768px) {
@@ -54,7 +69,6 @@ section {
     height: 300px;
     filter: grayscale(100%);
 }
-
 
 @media (max-width: 768px) {
     .card img {
@@ -97,7 +111,8 @@ section {
 }
 
 .card details blockquote {
-    color: #777;
+    color: var(--cor__media_2);
     font-style: italic;
 }
+
 
